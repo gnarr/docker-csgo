@@ -11,8 +11,7 @@ shopt -s extglob
 mmsource='https://mms.alliedmods.net/mmsdrop/1.10/mmsource-1.10.7-git971-linux.tar.gz'
 sourcemod='https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.10.0-git6458-linux.tar.gz'
 
-practicemode='https://github.com/splewis/csgo-practice-mode/releases/download/1.3.3/practicemode_1.3.3.zip'
-pugsetup='https://github.com/splewis/csgo-pug-setup/releases/download/2.0.5/pugsetup_2.0.5.zip'
+get5='https://github.com/splewis/get5/releases/download/0.7.1/get5_0.7.1.zip'
 
 STEAM_DIR=$HOME/Steam
 SERVER_DIR=$HOME/server
@@ -39,7 +38,7 @@ installPlugin() {
 managePlugins() {
     echo "> Managing plugins ..."
     cd $CSGO_DIR/addons/sourcemod/plugins
-    mv !(admin-flatfile.smx|botmimic.smx|csutils.smx|practicemode.smx|pugsetup.smx|pugsetup_damageprint.smx|pugsetup_teamlocker.smx|disabled) disabled
+    mv !(get5_apistats.smx|get5_mysqlstats.smx|disabled) disabled
     echo '> Done'
 }
 
@@ -57,8 +56,7 @@ installServer() {
   installMod $mmsource
   installMod $sourcemod
 
-  installPlugin $practicemode
-  installPlugin $pugsetup
+  installPlugin $get5
 
   managePlugins
 
