@@ -1,6 +1,6 @@
 # docker-csgo
 
-> [CS:GO Dedicated Server](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers) with [Metamod:Source](https://www.sourcemm.net/), [SourceMod](https://www.sourcemod.net/), [csgo-pug-setup](https://github.com/splewis/csgo-pug-setup) and [csgo-practice-mode](https://github.com/splewis/csgo-practice-mode)
+> [CS:GO Dedicated Server](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers) with [Metamod:Source](https://www.sourcemm.net/), [SourceMod](https://www.sourcemod.net/) and [get5](https://github.com/splewis/get5)
 
 ## How to Use This Image
 
