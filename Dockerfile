@@ -10,19 +10,19 @@ RUN apt-get update \
     unzip=6.0-23+deb10u1 \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -m csgo
+RUN useradd -m get5csgo
 
-USER csgo
+USER get5csgo
 
-RUN mkdir /home/csgo/Steam
+RUN mkdir /home/get5csgo/Steam
 
-WORKDIR /home/csgo/Steam
+WORKDIR /home/get5csgo/Steam
 
 RUN wget -qO- https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar zxf -
 
-RUN /home/csgo/Steam/steamcmd.sh +quit
+RUN /home/get5csgo/Steam/steamcmd.sh +quit
 
-WORKDIR /home/csgo
+WORKDIR /home/get5csgo
 
 RUN mkdir server
 
